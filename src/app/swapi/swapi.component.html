@@ -1,0 +1,10 @@
+<div *ngIf="charg">En chargement</div>
+
+<div *ngFor="let fi of films" (click)="onClick(fi)">
+  {{ fi.name }} ({{ fi.air_date | date: 'yyyy' }})
+</div>
+  <app-details style='text-align:right'
+    [details]="openDetails"
+  ></app-details>
+
+
